@@ -20,7 +20,7 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-      named: 'MyAgentPool'
+      name: 'MyAgentPool'
       demands:
       - npm
 
