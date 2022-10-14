@@ -11,7 +11,7 @@ stages:
   - job: 'Build'
     displayName: 'Build job'
     pool:
-       name: 'MyAgentPool'
+      name: 'MyAgentPool'
       demands:
       - npm
 
@@ -71,7 +71,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-       name: 'MyAgentPool'
+      name: 'MyAgentPool'
     environment: dev
     variables:
     - group: Release
@@ -94,7 +94,7 @@ stages:
   jobs:
   - deployment: Deploy
     pool:
-       name: 'MyAgentPool'
+      name: 'MyAgentPool'
     environment: test
     variables:
     - group: 'Release'
